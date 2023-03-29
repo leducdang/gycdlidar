@@ -38,7 +38,7 @@ add_library(${PROJECT_NAME} ${CYGLIDAR_SDK_PATH}/src/cygparser.c)
 
 link_directories(${PCL_LIBRARY_DIRS})
 
-add_executable(CyglidarNode cyglidar_d1/src/cyglidar_node.cpp ${CYGLIDAR_D_SRC})
+add_executable(CyglidarNode srcc/cyglidar_node.cpp ${CYGLIDAR_D_SRC})
 
 add_dependencies(CyglidarNode ${PROJECT_NAME}_generate_messages_cpp)
 
